@@ -205,7 +205,7 @@ function App() {
 			</div>
 
 			<select className="select" onChange={(e) => setCurrent(e.target.value)}>
-				{(import.meta.env.VITE_RPCS || "").split(",").map((rpc) => (
+				{RPCS.map((rpc) => (
 					<option key={rpc} value={rpc}>
 						{rpc}
 					</option>
